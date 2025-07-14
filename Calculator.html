@@ -1,7 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="./styles/calculator.css" />
 	</head>
-	<body>
+	<body class="toCenter">
+		<table>
+			<thead>
+				<th colspan="4">
+					<input type="text" value="0" readonly>
+				</th>
+			</thead>
+			<tbody>
+				<tr class="toRow">
+					<td class="toCenter"><button type="button" class="del"><</button></td>
+					<td class="toCenter"><button type="button" class="empty"><<</button></td>
+					<td class="toCenter"><button type="button">(</button></td>
+					<td class="toCenter"><button type="button">)</button></td>
+				</tr>
+				<tr class="toRow">
+					<td class="toCenter"><button type="button" class=" number">1</button></td>
+					<td class="toCenter"><button type="button" class=" number">2</button></td>
+					<td class="toCenter"><button type="button" class=" number">3</button></td>
+					<td class="toCenter"><button type="button">+</button></td>
+				</tr>
+				<tr class="toRow">
+					<td class="toCenter"><button type="button" class=" number">4</button></td>
+					<td class="toCenter"><button type="button" class=" number">5</button></td>
+					<td class="toCenter"><button type="button" class=" number">6</button></td>
+					<td class="toCenter"><button type="button">-</button></td>
+				</tr>
+				<tr class="toRow">
+					<td class="toCenter"><button type="button" class=" number">7</button></td>
+					<td class="toCenter"><button type="button" class=" number">8</button></td>
+					<td class="toCenter"><button type="button" class=" number">9</button></td>
+					<td class="toCenter"><button type="button">*</button></td>
+				</tr>
+				<tr class="toRow">
+					<td class="toCenter"><button type="button" class=" number">0</button></td>
+					<td class="toCenter"><button type="button">.</button></td>
+					<td class="toCenter"><button type="button">=</button></td>
+					<td class="toCenter"><button type="button">/</button></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script src="./front-controllers/calculator.js"></script>
 	</body>
 </html>

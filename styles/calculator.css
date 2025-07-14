@@ -1,0 +1,76 @@
+:root {
+    --every-radius: 15px;
+    --number-size: 35px;
+    --border-with-inset: 1px solid white;
+}
+
+* { box-sizing: border-box; }
+
+.toCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toRow {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+table {
+    border: 2px solid #ccc;
+    padding: 15px;
+    padding-top: 25px;
+    border-radius: var(--every-radius);
+}
+
+.number { background-color: darkgray; }
+.del { color: darkred; }
+.empty { background-color: lightcoral; }
+
+td, th {
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    button {
+        width: 90%;
+        height: 90%;
+        border-radius: var(--every-radius);
+        font-size: var(--number-size);
+        box-shadow: inset 2px 2px 5px white;
+        border-top: var(--border-with-inset);
+        border-left: var(--border-with-inset);
+        border-right: none;
+        border-bottom: none;
+    }
+
+    button:hover {
+        box-shadow: none;
+        box-shadow: 2px 2px 5px white;
+        border: var(--border-with-inset);
+    }
+
+    button:active {
+        box-shadow: inset -2px -2px 5px white;
+        border-top: none;
+        border-left: none;
+        border-right: var(--border-with-inset);
+        border-bottom: var(--border-with-inset);
+    }
+
+    input {
+        width: 98%;
+        height: 100%;
+        margin-bottom: 14px;
+        border-radius: var(--every-radius);
+        text-align: right;
+        padding-right: 10px;
+        font-size: var(--number-size);
+    }
+}

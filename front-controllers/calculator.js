@@ -35,7 +35,7 @@ const toOperate = (val) => {
             case "=":
                 toOperate(lastOperator);
                 lastOperator= "";
-                waitingNewOperand= false;
+                waitingNewOperand = false;
                 return;
         }
     }
@@ -43,8 +43,6 @@ const toOperate = (val) => {
     input.value = beforeOperand;
     lastOperator = val;
     waitingNewOperand = true;
-    
-    console.log("beforeOperand: ", beforeOperand, "\nval: "+ val+ "\nlastOperand: "+ lastOperator+ "\nwaitingNewOperand: ", waitingNewOperand, "\nDESDE OPERAR")
 }
 
 buttons.forEach(btn => {
@@ -55,7 +53,8 @@ buttons.forEach(btn => {
         if(isDigit(value) || value === ".") {
             if(
                 (value === "0" && input.value === "0") ||
-                (value === "." && input.value.includes(value))
+                (value === "." && input.value.includes(value)) ||
+                (value === "." && waitingNewOperand)
             ) { return;}
             
             if(
@@ -67,7 +66,6 @@ buttons.forEach(btn => {
                 waitingNewOperand = false;
             }
             else input.value+= value;
-            console.log("beforeOperand: ", beforeOperand, "\nvalue: "+ value+ "\nlastOperand: "+ lastOperator+ "\nwaitingNewOperand: ", waitingNewOperand, "\nDESDE IMPRIMIR")
             return;
         }
 

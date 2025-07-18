@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="title-zone flexRow">
+                <h1 class="title">To-Do List</h1>
+                <select class="dropdown">
+                    <option class="option" value="" disabled selected>Filter by ...</option>
+                    <option class="option" value="all">All</option>
+                    <option class="option" value="completed">Completed</option>
+                    <option class="option" value="pending">Pending</option>
+                </select>
+            </div>
+
+            <div id="card-zone" class="card-zone">
+
+                <div id="1" class="card">
+                    <div class="card-title flexRow">
+                        <p><strong>Task: </strong>32</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="description flexRow underline">
+                        <p><strong>Description: </strong>" ... "</p>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <p class="completed"><strong>Completed</strong></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title flexRow">
+                        <p><strong>Task: </strong>32</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="description flexRow underline">
+                        <p><strong>Description: </strong>" ... "</p>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <p class="completed"><strong>Completed</strong></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title flexRow">
+                        <p><strong>Task: </strong>32</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="description flexRow underline">
+                        <p><strong>Description: </strong>" ... "</p>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <p class="completed"><strong>Completed</strong></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title flexRow">
+                        <p><strong>Task: </strong>32</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="description flexRow underline">
+                        <p><strong>Description: </strong>" ... "</p>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <p class="completed"><strong>Completed</strong></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title flexRow">
+                        <p><strong>Task: </strong>32</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="description flexRow underline">
+                        <p><strong>Description: </strong>" ... "</p>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <p class="completed"><strong>Completed</strong></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-title flexRow">
+                        <p><strong>Task: </strong>32</p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="description flexRow underline">
+                        <p><strong>Description: </strong>" ... "</p>
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <p class="completed"><strong>Completed</strong></p>
+                </div>
+            </div>
+            <div id="there-is-not" class="there-is-not">
+                <p>There are pending tasks. Click "+" below to add a task.</p>
+            </div>
+            <button id="btn" type="button">+</button>
+        </section>
+        <script src="controller.js"></script>
+    </body>
+</html>

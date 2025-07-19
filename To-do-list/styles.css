@@ -85,8 +85,6 @@ p {
     font-size: 25px;
 }
 
-.completed { color: red;}
-
 .there-is-not {
     display: none;
     text-align: center;
@@ -100,4 +98,13 @@ button {
     height: 70px;
     font-size: 50px;
     font-weight: bolder;
+}
+
+.completed { 
+    color: red;
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
 }
